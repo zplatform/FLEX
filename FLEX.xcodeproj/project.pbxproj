@@ -142,6 +142,8 @@
 		94AAF0391BAF2E1F00DE8760 /* FLEXKeyboardHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAF0371BAF2E1F00DE8760 /* FLEXKeyboardHelpViewController.m */; };
 		94AAF03A1BAF2F0300DE8760 /* FLEXKeyboardShortcutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 942DCD821BAE0AD300DB5DC2 /* FLEXKeyboardShortcutManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A42069CF2809377F00EBCAEA /* FLEXFirebaseTransaction.mm in Sources */ = {isa = PBXBuildFile; fileRef = A42069CE2809377F00EBCAEA /* FLEXFirebaseTransaction.mm */; };
+		B756D875298904F2009923AE /* ZFLEXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B756D873298904F2009923AE /* ZFLEXManager.m */; };
+		B756D876298904F2009923AE /* ZFLEXManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B756D874298904F2009923AE /* ZFLEXManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C301994A2409B38A00759E8E /* CALayer+FLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = C30199482409B38A00759E8E /* CALayer+FLEX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C301994B2409B38A00759E8E /* CALayer+FLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = C30199492409B38A00759E8E /* CALayer+FLEX.m */; };
 		C309B82F223ED64400B228EC /* FLEXLogController.h in Headers */ = {isa = PBXBuildFile; fileRef = C309B82D223ED64400B228EC /* FLEXLogController.h */; };
@@ -530,6 +532,8 @@
 		94AAF0361BAF2E1F00DE8760 /* FLEXKeyboardHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLEXKeyboardHelpViewController.h; sourceTree = "<group>"; };
 		94AAF0371BAF2E1F00DE8760 /* FLEXKeyboardHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLEXKeyboardHelpViewController.m; sourceTree = "<group>"; };
 		A42069CE2809377F00EBCAEA /* FLEXFirebaseTransaction.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FLEXFirebaseTransaction.mm; sourceTree = "<group>"; };
+		B756D873298904F2009923AE /* ZFLEXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZFLEXManager.m; path = Classes/ZFLEX/ZFLEXManager.m; sourceTree = "<group>"; };
+		B756D874298904F2009923AE /* ZFLEXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZFLEXManager.h; path = Classes/ZFLEX/ZFLEXManager.h; sourceTree = "<group>"; };
 		C30199482409B38A00759E8E /* CALayer+FLEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+FLEX.h"; sourceTree = "<group>"; };
 		C30199492409B38A00759E8E /* CALayer+FLEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FLEX.m"; sourceTree = "<group>"; };
 		C309B82D223ED64400B228EC /* FLEXLogController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLEXLogController.h; sourceTree = "<group>"; };
@@ -802,6 +806,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4C94211B5B20570088C3F2 /* FLEX */,
+				B756D872298904D4009923AE /* ZFLEX */,
 				1C27A8B71F0E5A0400F0D02D /* FLEXTests */,
 				3A4C95451B5B216C0088C3F2 /* Frameworks */,
 				3A4C94201B5B20570088C3F2 /* Products */,
@@ -1123,6 +1128,15 @@
 				C313853E23F5C1A10046E63C /* FLEXViewControllersViewController.m */,
 			);
 			path = ExplorerInterface;
+			sourceTree = "<group>";
+		};
+		B756D872298904D4009923AE /* ZFLEX */ = {
+			isa = PBXGroup;
+			children = (
+				B756D874298904F2009923AE /* ZFLEXManager.h */,
+				B756D873298904F2009923AE /* ZFLEXManager.m */,
+			);
+			name = ZFLEX;
 			sourceTree = "<group>";
 		};
 		C312A12D23ECB55B00E38049 /* Bookmarks */ = {
@@ -1685,6 +1699,7 @@
 				3A4C94FB1B5B21410088C3F2 /* FLEXArgumentInputStringView.h in Headers */,
 				C38EF26323A2FCD20047A7EC /* FLEXViewControllerShortcuts.h in Headers */,
 				3A4C95421B5B21410088C3F2 /* FLEXNetworkObserver.h in Headers */,
+				B756D876298904F2009923AE /* ZFLEXManager.h in Headers */,
 				C386D6EB24199E9600699085 /* FLEX-ObjectExploring.h in Headers */,
 				679F64861BD53B7B00A8C94C /* FLEXCookiesViewController.h in Headers */,
 				C3F977872311B38F0032776D /* NSObject+FLEX_Reflection.h in Headers */,
@@ -1904,6 +1919,7 @@
 				C34063B628400A26007B46D3 /* FLEXActivityViewController.m in Sources */,
 				C398626623AD70F5007E6793 /* FLEXKBToolbarButton.m in Sources */,
 				3A4C952F1B5B21410088C3F2 /* FLEXWebViewController.m in Sources */,
+				B756D875298904F2009923AE /* ZFLEXManager.m in Sources */,
 				3A4C95041B5B21410088C3F2 /* FLEXArgumentInputView.m in Sources */,
 				C3F977842311B38F0032776D /* NSDictionary+ObjcRuntime.m in Sources */,
 				C312A13523ECBE5800E38049 /* FLEXBookmarksViewController.m in Sources */,
@@ -2189,6 +2205,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flipboard.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2225,6 +2242,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flipboard.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

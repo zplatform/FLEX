@@ -23,3 +23,5 @@
 #import "FLEXMacros.h"
 #import "FLEXAlert.h"
 #import "FLEXResources.h"
+
+#import <FLEX/ZFLEXManager.h>
